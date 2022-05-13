@@ -55,10 +55,10 @@
         </p>
         
         <ol class = "my_list">
-          <li style="list-style-type: disc">All the files in this website are hosted in S3. So the user when goes to formarc.net is actually pulling those files from there.</li><br>
-          <li style="list-style-type: disc">The feedback page contains a form with a submit button. The submit button connects via the Amazon API gateway with a Lambda function that takes the data from the form.</li><br>
-          <li style="list-style-type: disc">One Lambda function connects to the AWS SNS service that in turn sends an email to me. </li> <br>
-          <li style="list-style-type: disc">And another Lambda function is connected to an Amazon DynamoDB where emails will be stored. </li> <br>
+          <li style="list-style-type: disc">I created my website in my computer. I use Git to track my files and to connect to Github.</li><br>
+          <li style="list-style-type: disc">I push my files to Github.</li><br>
+          <li style="list-style-type: disc">Then I go to Jenkins where I have a pipeline created and using a Jenkins file I pull any changes from Github and I push my files to an S3 bucket.</li> <br>
+          <li style="list-style-type: disc">The S3 bucket is connected to my domain and this way automatically any changes appear on the world wide web. Easy! </li> <br>
          
        </ol>
        <br>
@@ -70,13 +70,14 @@
 
         
 
-        <div id="image_div"><img src="img/my-aws-architecture.png" alt="AWS architecture"></div>
+        <div id="image_div"><img src="img/architectura-image-medium.png" alt="AWS architecture"></div>
 
       </div>
 
       <div class="future_plans">
         <h2> Future plans </h2>
-        <p>Connect GitHub with AWS so that I have continuous deployment and integration. In addition,I will include Amazon Cognito for user management and authentication.</p>
+        <p>Create a feedback page connected to an Amazon API Gateway with a Lambda function that takes the data from the from.</p>
+        <p>The lambda function should connect to an AWS SNS service that in turn sends an email to me.</p>
 
       </div>
 
